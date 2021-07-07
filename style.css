@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --ff: "Poppins", sans-serif;
+
+    --fs-body: 15px;
+    --fs-h1: 25px;
+    --fs-h2: 20px;
+
+    --fw-light: 200;
+    --fw-reg:400;
+    --fw-bold: 600;
+
+    --clr-red:hsl(0, 78%, 62%);
+    --clr-cyan:hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+
+    --clr-dark-blue: hsl(234, 12%, 34%);
+    --clr-gray-blue: hsl(229, 6%, 66%);
+    --clr-light-gray: hsl(0, 0%, 98%);
+
+}
+
+@media(min-width:800px)
+{
+    :root{
+        --fs-h1: 30px;
+    }
+}
+/* General Styles */
+
+body{
+    font-family: var(--ff);
+    font-size: 15px;
+    height: 100vh;
+    margin: 2rem 0rem;
+}
+
+
+/* Typography */
+
+h1{
+    font-size: var(--fs-h1);
+    color:var(--clr-dark-blue);
+}
+
+h2{
+    font-size: var(--fs-h2);
+    color:var(--clr-dark-blue);
+}
+
+h1 span{
+    font-weight: var(--fw-light);
+}
+
+p{
+    color: var(--clr-gray-blue);
+    margin-top: 0.2rem;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* top */
+
+.top{
+    text-align: center;
+    margin: 3em;
+}
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    margin: 4em;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media(min-width:800px)
+{
+    .tools{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1240px;
+    }
+}
+
+.tool{
+    padding: 1.5em;
+    border-radius: 7px;
+    margin: 1em;
+    box-shadow: 0px 10px 30px rgba(64, 125, 149, 0.2);
+    max-width: 22rem;
+}
+
+.tool p{
+    position: relative;
+    margin: 0.3rem 0rem 3rem;
+    font-size: 14px;
+}
+
+.tool img{
+    margin-left: auto;
+    display: block;
+}
+
+.tool-1{
+    border-top: 4px solid var(--clr-cyan);
+    transform: translateY(0%);
+}
+
+.tool-2{
+    border-top: 4px solid var(--clr-red);
+}
+
+.tool-3{
+    border-top: 4px solid var(--clr-orange);
+    transform: translateY(0%);
+}
+
+.tool-4{
+    border-top: 4px solid var(--clr-blue);
+}
+
+@media(min-width:800px){
+.tool-1{
+    transform: translateY(50%);
+}
+.tool-3{
+    transform: translateY(50%);
+}
+}
+
+
+
